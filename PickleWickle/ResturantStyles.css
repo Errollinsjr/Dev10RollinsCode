@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* Edward Rollins
+9/14/18
+9/24/18*/
+
+/*for older browsers*/
+article, aside, details, figcaption,figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*General
+--------------------------*/
+
+.jumbotron {
+	
+	
+	background-repeat: no-repeat;
+	background-image: url("Images/jumbo.jpg");
+	
+	background-size: 550px 400px;
+	
+}	
+
+
+div[style] {
+	background-color: lightgreen !important;
+}
+
+dt {
+	text-align: center; 
+	display:block; 
+	margin-left: auto; 
+	margin-right: auto;"
+	font-weight: bold;
+	font-size: 5;
+}	
+
+
+custombox, checkbox   {
+	text-align: center; 
+	display:block; 
+	margin-left: auto; 
+	margin-right: auto;"
+
+}	
+
+label {
+
+	font-family: 'Comic Sans MS', arial;
+
+}
+
+dd, p {
+	
+	font-family: 'Comic Sans MS', arial;
+	
+}	
+
+table, tr, th, td{
+	 text-align: center;
+	padding-left: 85px;
+	
+}	
+
+td {
+	
+	background-color: lightgrey;
+	
+}	
+
+body {
+	height: 100%
+	margin: 0;
+	background-position:72% 52%;
+
+    background-image: url("Images/Background.jpg");
+	padding: 5px 25px 25px 55px;
+   
+}
+	
+h1, h3 {
+	display: block; 
+	text-align: center;
+	font-family: 'Comic Sans MS', arial;
+	font-size: 2.5em;
+    color: Black;
+}
+
+p {
+	padding: 5px 25px 25px 5px;
+	background-color: lightgreen;
+	font-weight: bold;
+    color: black;
+}
+
+pew {
+	display: block; 
+	text-align: center;
+	font-family: 'Comic Sans MS', arial;
+	font-size: 2.5em;
+    color: Black;
+	
+}	
+
+h2 {
+	
+	background-color: Black;
+	color: White;
+}
+
+.topnav {
+	overflow: hidden;
+    background-color: Black;
+}
+
+a:link, a:visited {
+    background-color: lightgreen;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: Blue;
+}
+
+footer {
+    background-color: #5b7d87;
+    color: blue;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+strong {
+	font-family: 'Comic Sans MS', arial;
+	font-size: 130%;
+
+}
+
+/*Style for menu & contact
+------------------*/
+
+<style>
+  .text {
+     text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .warning {
+    font-weight: bold;
+    color: red;
+  }
+  
+  div .warning {
+    font-style: italic;
+  }
+</style>
+
+
+

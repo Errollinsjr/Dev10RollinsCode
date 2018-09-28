@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Contact Page</title>
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="ResturantStyles.css">
+	
+	<div style>
+	</style>
+		
+</head>
+
+	
+<body>
+
+<script>
+		
+			var email = document.getElementById("email");
+
+				email.addEventListener("input", function (event) {
+				  if (email.validity.typeMismatch) {
+					email.setCustomValidity("Provide valid email plz!");
+				  } else {
+					email.setCustomValidity("");
+				  }
+				});
+
+				
+</script>
+		
+
+	<header class="jumbotron">
+    <h1>Welcome To Pickle Wickle's Famous Pickles!</h1>
+    <h2 class="font-italic"><font color="gold">BIG SALE, GRAND OPENING!</font></h2>
+	<h3 class="text-right mt-5">Serving your tastes day by day!</h3>
+</header>
+
+
+	<div class="container-fluid">
+
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Welcome!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Resturant1Rollins.html">Home <span class="glyphicon glyphicon-home"><span></a>
+	  </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Menu.html">Menu <span class="glyphicon glyphicon-file"><span></a>
+      </li>
+	   <li class="nav-item active">
+        <a class="nav-link" href="Contact.html">Contact <span class="glyphicon glyphicon-inbox"><span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="index.html">Bonus <span class="glyphicon glyphicon-flash"><span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="AboutUs.html">About us <span class="glyphicon glyphicon-user"><span></a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-6">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	</div><br>
+	
+			<div class="container-fluid">
+			
+	  <form action="Congrats.html">
+
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-mail">@</i></span>
+    <input id="email" class="form-control" type="email" name="email" placeholder="Email" required />
+  </div>
+	
+  
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+     <input type="text" class="form-control" id="usr" placeholder="Name">
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon">#</span>
+    <input id="msg" type="text" class="form-control" name="msg" placeholder="Phone">
+  </div>
+
+	
+	<div class="form-row">
+		
+			<label for="Reason">Reason</label>
+			 
+			  <select class="custom-select">
+				  <option selected>Catering</option>
+				  <option value="1">Private Party</option>
+				  <option value="2">Feedback</option>
+				  <option value="3">Other</option>
+			</select>
+		
+	  </div>
+	
+		<div class="form-group">
+	
+    <label for="exampleFormControlTextarea1">Provide additional text here</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			
+		</div>
+		
+		<p>Have you ever been to this resturant?</p>
+		<label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+		<label class="radio-inline"><input type="radio" name="optradio">No</label>
+		<p></p>
+		<p>Choose dates needed</p>
+		<label class="checkbox-inline"><input type="checkbox" value="">M</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">T</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">W</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">T</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">F</label>
+  
+   
+    </div>
+  </div>
+  <input class="btn btn-light" type="submit" value="Submit"></input>
+</form>
+	  
+
+			<b>Once you hit submit you will be sent back to home</b>
+	</div>
+	  
+	</div>
+		
+		<div class="footer">
+		<h2>David Christian Place, Greensboro, North Carolino, 27410, Phone(336-489-3931)</h2>
+		</div>
+		
+		
+		
+		 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+</body>
+</html>

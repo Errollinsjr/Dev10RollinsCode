@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta name="interface" content="desktop" />
+
+  <title>Slots</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'/>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/slot.css" />
+
+</head>
+<body>
+
+
+  <div id="viewport">
+	<div id="container">
+		<div id="header">
+		  <form method="get" action="Resturant1Rollins.html" >
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email">
+			  </div>
+
+	<h1>Pickle Slots!</h1>
+	<h3>Play and Win with your store tokens to win money or food!</h3>
+      </div>
+      <div id="reels">
+	<canvas id="canvas1" width="70" height="300"></canvas>
+	<canvas id="canvas2" width="70" height="300"></canvas>
+	<canvas id="canvas3" width="70" height="300"></canvas>
+	<div id="overlay">
+	  <div id="winline"></div>
+	</div>
+	<div id="results">
+	  <div id="score">
+	    <span id="multiplier">0</span> x <img src="img/gold-64.png"/>
+	  </div>
+	  <div id="status"></div>
+	</div>
+      </div>
+      <div id="buttons">
+	<div id="play" class="button button-default">Play</div>	
+		<br><br><br><br><br>
+      </div>
+		<h2>LIMITED TIME SPECIAL</h2>
+		<h2>Score 1 gold = 1$ off any purchase</h2>
+		<h2>Score 2 gold = 2$ off any purchase</h2>
+		<h2>Score 3 gold = Free Milkshake or Beverage + 1$ off meal</h2>
+		<h2>Score 3 Free's = 1 free meal of choice</h2>
+	<button type="submit" class="btn btn-success" style= "display:block; margin-left: auto; margin-right: auto;" >Submit</button>
+</form>
+		
+	
+    </div>
+	<br></br>
+    <input id="debug" type="button" value="Debug Reels" style= "display:block; margin-left: auto; margin-right: auto;"/>
+	<br></br><br></br>
+	<form method="get" action="Resturant1Rollins.html" >
+    <button type="submit" style= "display:block; margin-left: auto; margin-right: auto;">home</button>
+	</form>
+  </div>
+  
+	
+		
+   
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+  <script type="text/javascript" src="js/slot.js"></script>
+  <script type="text/javascript">$(function() { SlotGame(); });</script>
+</body>
+</html>
