@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="lucky.css">
+<link rel="stylesheet" type="text/css" href="makeItRain.css">
+<script type="text/JavaScript" src="luckySevens.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="makeItRain.js" > </script>
+
+<script>
+function luckySevens() {
+  var bet = document.getElementById("bet").value;
+  var tally = 0
+  var counter = 0
+  var gameMoney = bet
+  var betsArray = [bet];
+  var maxHeld = 0;
+ 
+
+  if (bet <= 0) {
+    alert("Starting bet must be greater than 0");
+    document.forms["game"]["bet"].parentElement.className = "form-group has-error"
+    return false;
+  }
+
+  while (gameMoney > 0) {
+	tally = 1;
+    tally++;
+
+    
+	
+	var d1 = document.getElementById("die1");
+    var d2 = document.getElementById("die2");
+    var status = document.getElementById("status");
+    var die1 = Math.floor(Math.random() * 6) + 1;
+    var die2 = Math.floor(Math.random() * 6) + 1;
+	var dice = die1+die2;
+    var diceTotal = die1 + die2;
+    d1.innerHTML = die1;
+    d2.innerHTML = die2;
+	
+
+    // win = if player rolls any of the two dice to sum 7 they gain 4 dollars to new hand
+    if (dice == 7) {
+      gameMoney = gameMoney + 4;
+      var lastHand = betsArray[betsArray.length - 1];
+      var newHand = lastHand + 4;
+      betsArray.push(newHand);
+    }
+
+    // lose = if sum does not equal 7 via both dice, player loses dollar
+    else {
+      gameMoney--;
+      counter++;
+      var lastHand = betsArray[betsArray.length - 1];
+      var newHand = lastHand - 1;
+      betsArray.push(newHand);
+    }
+	tally = 1;
+    tally = tally++
+  }
+
+
+  total = Math.max(...betsArray);
+  rolls = betsArray.indexOf(total) + 1;
+  if (rolls < 1) {
+    rolls = 0;
+  }
+
+  document.getElementById("results").style.display = "block";
+  document.getElementById("starting").innerText = bet;
+  document.getElementById("totalRolls").innerText = tally;
+  document.getElementById("max").innerText = total;
+  document.getElementById("rollCount").innerText = rolls;
+  return false;
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Lucky 7s</h1>
+  <br>
+  <form name="game" onsubmit="return luckySevens();" class="form-inline">
+    <p>
+      <div class="form-group">
+        <label for="bet">Your starting Bet: </label>
+        <input type="number" class="form-control" id="bet" placeholder="$0.00">
+      </div>
+    </p>
+    <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+  </form>
+  <hr />
+  <table id="results" class="table table-striped" style="display:none;">
+    <thead>
+      <tr>
+        <th colspan="2">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Starting Bet</td>
+        <td><span id="starting"></span></td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td><span id="totalRolls"></span></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td>
+        <td><span id="max"></span></td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td><span id="rollCount"></span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+	<h2>Last luckiest roll</h2>
+	
+	<div class="d">
+		<div id="die1" class="dice">1</div>
+		<div id="die2" class="dice">1</div>
+	</div>
+	
+</div>
+
+
+
+
+
+</body>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><font color="yellow">*Note, just change bet amount, and press play to restart and/or play again*</font></p>
+
+
+
+</html>

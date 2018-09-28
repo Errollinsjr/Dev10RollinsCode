@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* Edward Rollins
+9/14/18
+9/24/18*/
+
+/*for older browsers*/
+article, aside, details, figcaption,figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+body, d, table, tr, tbody, td, thead{
+
+	text-align: center; 
+	display:block; 
+	margin-left: auto; 
+	margin-right: auto;"
+
+
+}
+
+td {
+	
+	background-color: lightgrey;
+	
+}	
+
+body {
+	height: 100%
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+    background-image: url("Images/lucky.gif");
+	
+	
+}	
+
+h2 {
+	
+	font-weight: bold;
+	background-color: lightgrey;
+}	
+
+ 
+
+div.dice{
+	float:left;
+	width:32px;
+	background:#F5F5F5;
+	border:#999 1px solid;
+	padding:10px;
+	font-size:24px;
+	margin:15px;
+	text-align: center; 
+	position: relative;
+    left: 405px;
+
+}
+
+
+
